@@ -1,0 +1,3 @@
+name 1 | O: | \\folder1\share
+name 2 | P: | \\127.0.0.1\open
+name 3 | O: | \\folder1\share
