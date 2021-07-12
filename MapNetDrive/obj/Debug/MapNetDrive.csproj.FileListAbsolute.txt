@@ -12,8 +12,3 @@ C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.GenerateRes
 C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.CoreCompileInputs.cache
 C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.exe
 C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.pdb
-C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\LoginWindow.g.cs
-C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\LoginWindow.baml
-C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\ProgressBarWindow.g.cs
-C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\ProgressBarWindow.baml

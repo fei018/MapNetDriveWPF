@@ -1,0 +1,13 @@
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\bin\Release\MapNetDrive.exe
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\bin\Release\MapNetDrive.pdb
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MainWindow.g.cs
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\App.g.cs
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive_MarkupCompile.cache
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive_MarkupCompile.lref
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MainWindow.baml
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive.g.resources
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive.Properties.Resources.resources
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive.csproj.GenerateResource.cache
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive.csproj.CoreCompileInputs.cache
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive.exe
+C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Release\MapNetDrive.pdb

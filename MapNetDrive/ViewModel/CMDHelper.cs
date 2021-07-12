@@ -1,24 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MapNetDrive.Model;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MapNetDrive.Model;
 
 namespace MapNetDrive.ViewModel
 {
     public class CMDHelper
     {
-        /// <summary>
-        /// Get net use cmd string
-        /// </summary>
-        private string GetNetUseCmdString(LoginUser user, MapInfo info)
-        {
-            var net = $@"net use {info.Drive} {info.SharePath}";
-            return $"{net} /user:{user.UserName} {user.Password}";
-        }
-
         private string RunCmd(string cmdString)
         {
             if (string.IsNullOrWhiteSpace(cmdString))
@@ -46,8 +32,6 @@ namespace MapNetDrive.ViewModel
             var error = p.StandardError.ReadToEnd();
             //var output = p.StandardOutput.ReadToEnd(); // dont export because will show password
 
-            p.WaitForExit(3000);
-
             return error;
         }
 
@@ -56,7 +40,12 @@ namespace MapNetDrive.ViewModel
         /// </summary>
         public string RunNetUseCmd(LoginUser user, MapInfo info)
         {
-            var input = GetNetUseCmdString(user,info);
+            if (string.IsNullOrWhiteSpace(user.UserName))
+            {
+                return RunCmd(info.NetUseString);
+            }
+
+            var input = $"{info.NetUseString} /user:{user.UserName} {user.Password}";
             var error = RunCmd(input);
 
             return error;
@@ -65,13 +54,12 @@ namespace MapNetDrive.ViewModel
         /// <summary>
         /// delete net drive letter
         /// </summary>
-        public void RunNetUseDeleteCmd(MapInfo info)
+        public void DeleteNetworkDrive(MapInfo info)
         {
-            var drive = info.Drive;
-            if (drive == null) return;
+            if (info.NetworkDriveLetter == null) return;
 
             //Process.Start("cmd.exe", $" /c net use {drive} /d /y");
-            var input = $"net use {drive} /d /y";
+            var input = $"net use {info.NetworkDriveLetter} /d /y";
             RunCmd(input);
         }
 
@@ -80,9 +68,8 @@ namespace MapNetDrive.ViewModel
         /// </summary>
         public void RunOpenDrive(MapInfo info)
         {
-            var drive = info.Drive;
-            if (drive == null) return;
-            var input = $"explorer.exe {drive}";
+            if (info.NetworkDriveLetter == null) return;
+            var input = $"explorer.exe {info.NetworkDriveLetter}";
             RunCmd(input);
         }
     }

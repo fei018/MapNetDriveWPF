@@ -1,35 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MapNetDrive.Model
+﻿namespace MapNetDrive.Model
 {
     public class MapInfo
     {
         public string Department { get; set; }
 
-        private string _drive;
+        public string NetUseString { get; set; }
 
-        public string Drive
+        /// <summary>
+        /// return net use drive letter
+        /// </summary>
+        public string NetworkDriveLetter
         {
-            get { return _drive; }
-            set
+            get
             {
-                if (!value.Trim().EndsWith(":"))
-                {
-                    throw new Exception("Drive name error");
-                }
-                _drive = value;
+                if (string.IsNullOrWhiteSpace(NetUseString)) return null;
+
+                var index = NetUseString.IndexOf(':');
+                if (index <= 0) return null;
+
+                var drive = NetUseString.Substring(index - 1, 2);
+                return drive;
             }
         }
-
-
-        public string SharePath { get; set; }
-
-        public string DetailHeard => "Department:\r\nDrive:\r\nSharePath:";
-
-        public string DetailContent => $"{Department}\r\n{Drive}\r\n{SharePath}";
     }
 }
