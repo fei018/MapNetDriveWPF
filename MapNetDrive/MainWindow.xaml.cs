@@ -1,6 +1,5 @@
-﻿using MapNetDrive.ViewModel;
+﻿using MapNetDrive.Model;
 using System;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls.Primitives;
@@ -44,22 +43,28 @@ namespace MapNetDrive
         #region Execute CMD 
         private void ExecuteNetUseCMD()
         {
+            if (string.IsNullOrWhiteSpace(this.txtUserName.Text))
+            {
+                MessageBox.Show("UserName is Null.", "Error");
+                return;
+            }
+
             var login = new LoginUser
             {
                 UserName = this.txtUserName.Text.Trim(),
-                Password = this.txtPassword.Password.Trim()
+                Password = this.txtPassword.Password?.Trim()
             };
 
-
+            // task to run command
             Task.Factory.StartNew(() =>
             {
                 this.Dispatcher.BeginInvoke(new Action(() => ShowProgressBar()));
 
                 var cmd = new CMDHelper();
                 cmd.DeleteNetworkDrive(_mainVM.SelectedMapInfo);
-                
 
-                var result = cmd.RunNetUseCmd(login, _mainVM.SelectedMapInfo).Trim();
+
+                var result = cmd.ExcuteNetUseCmd(login, _mainVM.SelectedMapInfo).Trim();
 
                 if (!string.IsNullOrEmpty(result))
                 {
@@ -67,7 +72,7 @@ namespace MapNetDrive
                 }
                 else
                 {
-                    cmd.RunOpenDrive(_mainVM.SelectedMapInfo);
+                    cmd.OpenDrive(_mainVM.SelectedMapInfo);
                     this.Dispatcher.BeginInvoke(new Action(() => this.Close()));
                 }
 

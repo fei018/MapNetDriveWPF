@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MapNetDrive"
-        xmlns:vm="clr-namespace:MapNetDrive.ViewModel"
+        xmlns:vm="clr-namespace:MapNetDrive.Model"
         mc:Ignorable="d"
         Title="Network Drive Mapping 0.2" Height="300" Width="510" ResizeMode="CanMinimize" 
         WindowStartupLocation="CenterScreen" Icon="Network-Drive.ico"

@@ -1,7 +1,6 @@
-﻿using MapNetDrive.Model;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
-namespace MapNetDrive.ViewModel
+namespace MapNetDrive.Model
 {
     public class CMDHelper
     {
@@ -38,13 +37,8 @@ namespace MapNetDrive.ViewModel
         /// <summary>
         /// Run Net Use cmd
         /// </summary>
-        public string RunNetUseCmd(LoginUser user, MapInfo info)
+        public string ExcuteNetUseCmd(LoginUser user, MapInfo info)
         {
-            if (string.IsNullOrWhiteSpace(user.UserName))
-            {
-                return RunCmd(info.NetUseString);
-            }
-
             var input = $"{info.NetUseString} /user:{user.UserName} {user.Password}";
             var error = RunCmd(input);
 
@@ -64,9 +58,9 @@ namespace MapNetDrive.ViewModel
         }
 
         /// <summary>
-        /// open net drive
+        /// open net drive on explorer
         /// </summary>
-        public void RunOpenDrive(MapInfo info)
+        public void OpenDrive(MapInfo info)
         {
             if (info.NetworkDriveLetter == null) return;
             var input = $"explorer.exe {info.NetworkDriveLetter}";

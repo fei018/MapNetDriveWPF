@@ -4,10 +4,19 @@
     {
         public string Department { get; set; }
 
-        public string NetUseString { get; set; }
+        private string _netUserString;
+        public string NetUseString 
+        {
+            get => _netUserString;
+
+            set
+            {
+                _netUserString = "net use " + value;
+            }
+        }
 
         /// <summary>
-        /// return net use drive letter
+        /// net use drive letter
         /// </summary>
         public string NetworkDriveLetter
         {

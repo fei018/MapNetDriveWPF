@@ -1,10 +1,10 @@
-HH Planning | net use p: \\hhtender.hiphing.nws\public
-HH Business Development | net use o: \\hhtender.hiphing.nws\common
-HH BIM | net use o: \\hhbim.hiphing.nws\common
-HH Accounts | net use o: \\hhaccount.hiphing.nws\common
-HH Engineering | net use o: \\hhengine.hiphing.nws\common
-HH Engineering Design | net use o: \\hhengined.hiphing.nws\common
-HH HR | net use o: \\hhhr.hiphing.nws\common
-HH Other Dept | net use o: \\hhfile.hiphing.nws\common
-VB O Drive | net use o: \\vbfile01.hiphing.nws\common
-VB P Drive | net use p: \\vbfile01.hiphing.nws\pub_form
+HH Planning | p: \\hhtender.hiphing.nws\public
+HH Business Development | o: \\hhtender.hiphing.nws\common
+HH BIM | o: \\hhbim.hiphing.nws\common
+HH Accounts | o: \\hhaccount.hiphing.nws\common
+HH Engineering | o: \\hhengine.hiphing.nws\common
+HH Engineering Design | o: \\hhengined.hiphing.nws\common
+HH HR | o: \\hhhr.hiphing.nws\common
+HH Other Dept | o: \\hhfile.hiphing.nws\common
+VB O Drive | o: \\vbfile01.hiphing.nws\common
+VB P Drive | p: \\vbfile01.hiphing.nws\pub_form

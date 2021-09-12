@@ -1,4 +1,4 @@
-﻿namespace MapNetDrive.ViewModel
+﻿namespace MapNetDrive.Model
 {
     public class LoginUser
     {

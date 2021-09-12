@@ -12,3 +12,17 @@ C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.GenerateRes
 C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.CoreCompileInputs.cache
 C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.exe
 C:\CodeRepos\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.pdb
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\bin\Debug\MapNetDrive.exe
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\bin\Debug\MapNetDrive.pdb
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.AssemblyReference.cache
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MainWindow.g.cs
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\App.g.cs
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive_MarkupCompile.cache
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive_MarkupCompile.lref
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MainWindow.baml
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.g.resources
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.Properties.Resources.resources
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.GenerateResource.cache
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.csproj.CoreCompileInputs.cache
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.exe
+C:\Code\fei018\MapNetDriveWPF\MapNetDrive\obj\Debug\MapNetDrive.pdb
